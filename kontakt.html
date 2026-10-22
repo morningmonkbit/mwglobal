@@ -1,0 +1,291 @@
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+      name="description"
+      content="Persönliche Beratung, Alltagstipps und Informationen zu FitLine bei MWGlobal Vital & Schön."
+    >
+    <meta name="theme-color" content="#20392e">
+
+    <title>Kontakt & Beratung | MWGlobal Vital & Schön</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+    <div class="container nav">
+        <a aria-label="MWGlobal Startseite" class="logo" href="index.html">
+        <img alt="MWGlobal Vital & Schön" class="brand-logo" src="assets/images/MWGlobal_Logo.png">
+        </a>
+        <nav aria-label="Hauptnavigation" class="nav-links" id="main-nav">
+        <a href="index.html">
+        Startseite
+        </a>
+        <a href="pm-international.html">
+        PM-International
+        </a>
+        <a href="https://www.pmebusiness.com/registrationv2/?TP=6020723">
+        Registrieren
+        </a>
+        <a class="btn" href="kontakt.html">
+        Jetzt beraten lassen
+        </a>
+        </nav>
+        <button aria-controls="main-nav" aria-expanded="false" aria-label="Men&uuml; &ouml;ffnen" class="menu-btn">
+        ☰
+        </button>
+    </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Was liegt Ihnen am Herzen?</h1>
+
+          <p>
+            Mit wenigen freiwilligen Antworten können Sie Ihre
+            Beratungsanfrage vorbereiten. Sie entscheiden selbst,
+            was Sie teilen möchten.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="question-card" id="wizard">
+            <span class="eyebrow">
+              Ihr persönlicher Wohlbefinden-Check
+            </span>
+
+            <div class="progress" aria-hidden="true">
+              <span id="q-progress"></span>
+            </div>
+
+            <div id="question-part">
+              <h2 id="q-title"></h2>
+
+              <p class="muted">
+                Wählen Sie die Antwort, die am ehesten passt.
+                Sie können Fragen auch mit „Möchte ich nicht
+                angeben“ beantworten.
+              </p>
+
+              <div id="q-options" class="options"></div>
+
+              <div class="form-nav">
+                <button
+                  id="q-back"
+                  type="button"
+                  class="btn outline"
+                >
+                  ← Zurück
+                </button>
+
+                <button
+                  id="q-next"
+                  type="button"
+                  class="btn"
+                >
+                  Weiter →
+                </button>
+              </div>
+            </div>
+
+            <div id="details-part" class="hide">
+              <h2>Vielen Dank für Ihre Antworten.</h2>
+
+              <p>
+                Wenn Sie möchten, können Sie jetzt eine
+                persönliche Beratungsanfrage vorbereiten.
+              </p>
+
+              <p id="summary" class="notice small"></p>
+
+              <button
+                type="button"
+                class="btn outline"
+                id="edit-answers"
+              >
+                Antworten ändern
+              </button>
+
+              <form id="contact-form">
+                <label class="form-field">
+                  Ihr Name *
+
+                  <input
+                    name="name"
+                    autocomplete="name"
+                    required
+                    maxlength="120"
+                  >
+                </label>
+
+                <label class="form-field">
+                  Ihre E-Mail-Adresse *
+
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    maxlength="180"
+                  >
+                </label>
+
+                <label class="form-field">
+                  Telefon (optional)
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="tel"
+                    maxlength="50"
+                  >
+                </label>
+
+                <label class="form-field">
+                  Ihre Nachricht (optional)
+
+                  <textarea
+                    name="message"
+                    maxlength="2000"
+                    placeholder="Was möchten Sie gerne wissen?"
+                  ></textarea>
+                </label>
+
+                <label class="consent">
+                  <input type="checkbox" required>
+
+                  <span>
+                    Ich willige ausdrücklich ein, dass meine
+                    freiwillig angegebenen Informationen,
+                    einschließlich möglicher Gesundheitsangaben,
+                    zum Zweck der Beantwortung meiner Beratungsanfrage
+                    an MWGlobal übermittelt und dafür verarbeitet
+                    werden. Ich kann meine Einwilligung jederzeit
+                    mit Wirkung für die Zukunft widerrufen.
+                    Ich habe die
+                    <a
+                      href="datenschutz.html"
+                      style="text-decoration: underline"
+                    >Datenschutzhinweise</a>
+                    gelesen. *
+                  </span>
+                </label>
+
+                <p class="small muted">
+                  Beim Absenden öffnet sich Ihr E-Mail-Programm
+                  mit einer vorbereiteten Nachricht. Erst wenn
+                  Sie diese dort selbst absenden, werden die
+                  Angaben übermittelt. Es erfolgt keine
+                  automatische Speicherung auf dieser Website.
+                </p>
+
+                <button class="btn" type="submit">
+                  E-Mail zur Beratung vorbereiten ↗
+                </button>
+
+                <p
+                  id="mail-note"
+                  class="notice hide"
+                  role="status"
+                >
+                  Falls kein E-Mail-Programm geöffnet wurde,
+                  schreiben Sie bitte direkt an
+                  <a href="mailto:mwglobal@web.de">mwglobal@web.de</a>.
+                  Das Formular wurde nicht automatisch versendet.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="container narrow"
+            style="margin-top: 65px"
+          >
+            <h3>Sie möchten lieber direkt schreiben?</h3>
+
+            <p>
+              Sie erreichen mich unter
+              <a
+                href="mailto:mwglobal@web.de"
+                class="text-link"
+              >mwglobal@web.de</a>.
+              Bei anhaltenden oder starken gesundheitlichen
+              Beschwerden wenden Sie sich bitte an medizinisches
+              Fachpersonal. Diese Beratung ersetzt keine
+              medizinische Diagnose oder Behandlung.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+        <div>
+        <a aria-label="MWGlobal Startseite" class="logo" href="index.html">
+        <img alt="MWGlobal Vital & Schön" class="brand-logo" src="assets/images/MWGlobal_Logo.png">
+        </a>
+        <p>
+        Persönliche Impulse für einen bewussten Alltag.
+        <br>
+        Dies ist keine offizielle Seite von PM International. <br> Unabhängiger Vertriebspartner von PM-International.
+        </p>
+        </div>
+        <div class="footer-col">
+        <b>
+        Entdecken
+        </b>
+        <a href="index.html">
+        Startseite
+        </a>
+        <a href="pm-international.html">
+        PM-International
+        </a>
+        <a href="https://www.pmebusiness.com/registrationv2/?TP=6020723">
+        Registrierung
+        </a>
+        <a href="kontakt.html">
+        Kontakt
+        </a>
+        </div>
+        <div class="footer-col">
+        <b>
+        Informationen
+        </b>
+        <a href="impressum.html">
+        Impressum
+        </a>
+        <a href="agb.html">
+        AGB / Hinweise
+        </a>
+        <a href="datenschutz.html">
+        Datenschutz
+        </a>
+        <a href="mailto:mwglobal@web.de">
+        mwglobal@web.de
+        </a>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <span>
+        &copy; 2026 MWGlobal Vital & Schön &middot; Marco Wiesemann
+        </span>
+        <span>
+        Hinweis: Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung. Externe Shop-Links enthalten eine Sponsor-Zuordnung.
+        </span>
+        </div>
+    </div>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>
